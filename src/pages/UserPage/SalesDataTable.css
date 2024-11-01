@@ -1,0 +1,78 @@
+/* Table styling */
+.dataTable {
+  border: 1px solid #020617;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Date column styling */
+.sales-date {
+  text-align: center;
+  color: #020617; /* White text for dates */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #020617; /* Match your theme's dark color */
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.close-button {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Action buttons styling */
+.action-buttons {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute space between buttons */
+  align-items: center; /* Center buttons vertically */
+  width: 100%; /* Make the container full width */
+}
+
+.action-buttons button {
+  flex: 1; /* Make buttons grow to fill the space equally */
+  margin: 0 4px; /* Add horizontal margin between buttons */
+  height: 40px; /* Set a fixed height for uniformity */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Optional: to remove the last button's right margin */
+.action-buttons button:last-child {
+  margin-right: 0; /* Remove margin from the last button */
+}
+
+/* Card styling */
+.card {
+  background-color: #2d3748; /* Gray 800 */
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  flex-grow: 1; /* Allows cards to grow equally in the row */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Truncation for long text */
+.truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
