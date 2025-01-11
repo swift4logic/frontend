@@ -40,7 +40,7 @@ const FacebookIdsForm = () => {
 
     console.log("facebookAccounts", facebookAccounts);
     try {
-      const response = await axios.post('${process.env.REACT_APP_HOST}/admin/facebook-accounts', {
+      const response = await axios.post(`${import.meta.env.VITE_HOST}/admin/facebook-accounts`, {
         facebookAccounts,
       }, {
         headers: {

@@ -16,7 +16,7 @@ const EmployeSales = () => {
     setError('');
 
     try {
-      const response = await axios.get(`${process.env.REACT_APP_HOST}/admin/fetch-all-sale`, {
+      const response = await axios.get(`${import.meta.env.VITE_HOST}/admin/fetch-all-sale`, {
         params: { user_id: user_id },
         headers: {
           Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ const EmployeSales = () => {
   const toggleSaleStatus = async (saleId, currentStatus) => {
     const newStatus = currentStatus === 0 ? 1 : 0; // Toggle status
     try {
-      await axios.post(`${process.env.REACT_APP_HOST}/admin/sales-status`, {
+      await axios.post(`${import.meta.env.VITE_HOST}/admin/sales-status`, {
         sale_id: saleId,
         status: newStatus,
         userId: user_id,
