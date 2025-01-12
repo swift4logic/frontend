@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import CreateUser from './pages/createUSER.JSX';
+import CreateUser from './pages/createUser.jsx';
 import SignIn from './pages/login';
 import CheckIn from './pages/checkIn';
 import Layout from './pages/Layout/UserLayout';
